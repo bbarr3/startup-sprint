@@ -1,11 +1,21 @@
+
+<table>
+   <tr>
+      <td>
+
+
 <div>
   <div class="column1">
     <h3>Today</h3>
+
     <ol>
       <% @today.each do |item| %>
         <li><%= item.first %>: <%= item.last %></li>
       <% end %>
     </ol>
+      </td>
+      <td>
+
   </div>
   <div class="column2">
     <h3>Tomorrow</h3>
@@ -14,5 +24,6 @@
         <li><%= item.first %>: <%= item.last %></li>
       <% end %>
     </ol>
-  </div>
-</div>
+      </td>
+   </tr>
+</table>
