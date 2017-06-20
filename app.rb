@@ -28,6 +28,11 @@ class App < Sinatra::Base
     erb :reddit
   end
 
+  get '/team' do
+
+    erb :team
+  end
+
   get '/schedule' do
     @today = [
       ['7:00am', 'Wake up'],
@@ -52,5 +57,9 @@ class App < Sinatra::Base
     # TODO: add a third day's schedule (@day_after)
 
     erb :schedule
+
+    get '/team' do
+    end
+
   end
 end
