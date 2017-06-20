@@ -50,5 +50,9 @@ class App < Sinatra::Base
     # TODO: add a third day's schedule (@day_after)
 
     erb :schedule
+
+    get '/team' do
+    end
+
   end
 end
